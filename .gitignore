@@ -1,0 +1,4 @@
+    # Model files
+    models/
+    *.pth
+    *.pt
