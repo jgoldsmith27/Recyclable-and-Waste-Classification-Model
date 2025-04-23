@@ -19,4 +19,19 @@ To train a model, run the training script from the terminal:
 
 ```bash
 python waste_classification_train.py
+```
+This will:
+- Automatically fetch the dataset if not already present.
+- Train the model using the default architecture and hyperparameters.
 
+#### You can customize the training by:
+- Changing the hyperparameters (learning rate, batch size, etc.) inside waste_classification_train.py.
+- Swapping the model architecture by modifying the import from the waste_classification_models/ directory.
+
+### 3. Test the Model
+After training, evaluate your model's performance:
+
+```bash
+python waste_classification_test.py
+```
+This will load the latest trained model and report test metrics such as accuracy, loss, F1 and downloaded relevant plots such as the confusion matrix, accuracy per class, and validation vs. loss plot.
